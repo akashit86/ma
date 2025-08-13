@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maa Annapoorna General Stores - Your One-Stop Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .pulse-animation { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">🏪</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800">Maa Annapoorna</h1>
+                        <p class="text-sm text-gray-600">General Stores</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+                    <a href="#products" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Products</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Services</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                </nav>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
+                    📞 Call Now
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold mb-6">Your Trusted Neighborhood Store</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">From daily groceries to household essentials, we've got everything you need under one roof. Quality products, affordable prices, and friendly service since day one.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="scrollToSection('products')" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+                    🛒 Shop Now
+                </button>
+                <button onclick="scrollToSection('contact')" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                    📍 Visit Store
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 card-hover bg-gray-50 rounded-xl">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🥬</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Fresh Groceries</h3>
+                    <p class="text-gray-600">Daily fresh vegetables, fruits, dairy products, and pantry essentials delivered with care.</p>
+                </div>
+                <div class="text-center p-6 card-hover bg-gray-50 rounded-xl">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🏠</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Household Items</h3>
+                    <p class="text-gray-600">Complete range of household essentials, cleaning supplies, and daily use items.</p>
+                </div>
+                <div class="text-center p-6 card-hover bg-gray-50 rounded-xl">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">💰</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Best Prices</h3>
+                    <p class="text-gray-600">Competitive prices with regular offers and discounts for our valued customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Product Categories</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our wide range of products carefully selected to meet all your daily needs</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl p-6 card-hover text-center">
+                    <div class="text-4xl mb-4">🍎</div>
+                    <h3 class="font-semibold text-lg mb-2">Fresh Fruits & Vegetables</h3>
+                    <p class="text-gray-600 text-sm">Farm-fresh produce delivered daily</p>
+                    <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded-full text-sm hover:bg-green-600 transition-colors">
+                        View Items
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 card-hover text-center">
+                    <div class="text-4xl mb-4">🥛</div>
+                    <h3 class="font-semibold text-lg mb-2">Dairy Products</h3>
+                    <p class="text-gray-600 text-sm">Milk, yogurt, cheese, and more</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition-colors">
+                        View Items
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 card-hover text-center">
+                    <div class="text-4xl mb-4">🍚</div>
+                    <h3 class="font-semibold text-lg mb-2">Grains & Pulses</h3>
+                    <p class="text-gray-600 text-sm">Rice, wheat, lentils, and cereals</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition-colors">
+                        View Items
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 card-hover text-center">
+                    <div class="text-4xl mb-4">🧴</div>
+                    <h3 class="font-semibold text-lg mb-2">Personal Care</h3>
+                    <p class="text-gray-600 text-sm">Soaps, shampoos, and hygiene products</p>
+                    <button class="mt-4 bg-purple-500 text-white px-4 py-2 rounded-full text-sm hover:bg-purple-600 transition-colors">
+                        View Items
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 card-hover text-center">
+                    <div class="text-4xl mb-4">🧽</div>
+                    <h3 class="font-semibold text-lg mb-2">Cleaning Supplies</h3>
+                    <p class="text-gray-600 text-sm">Detergents, disinfectants, and tools</p>
+                    <button class="mt-4 bg-teal-500 text-white px-4 py-2 rounded-full text-sm hover:bg-teal-600 transition-colors">
+                        View Items
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 card-hover text-center">
+                    <div class="text-4xl mb-4">🍪</div>
+                    <h3 class="font-semibold text-lg mb-2">Snacks & Beverages</h3>
+                    <p class="text-gray-600 text-sm">Biscuits, chips, tea, and coffee</p>
+                    <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm hover:bg-red-600 transition-colors">
+                        View Items
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 card-hover text-center">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="font-semibold text-lg mb-2">Electronics & Accessories</h3>
+                    <p class="text-gray-600 text-sm">Mobile accessories, batteries, and gadgets</p>
+                    <button class="mt-4 bg-indigo-500 text-white px-4 py-2 rounded-full text-sm hover:bg-indigo-600 transition-colors">
+                        View Items
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 card-hover text-center">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="font-semibold text-lg mb-2">Stationery</h3>
+                    <p class="text-gray-600 text-sm">Pens, notebooks, and office supplies</p>
+                    <button class="mt-4 bg-gray-500 text-white px-4 py-2 rounded-full text-sm hover:bg-gray-600 transition-colors">
+                        View Items
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Why Choose Us?</h2>
+                <p class="text-gray-600">We go the extra mile to serve our community</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="text-green-600 text-xl">🚚</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2">Home Delivery</h3>
+                        <p class="text-gray-600">Free delivery for orders above ₹500 within 5km radius</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="text-blue-600 text-xl">💳</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2">Multiple Payment Options</h3>
+                        <p class="text-gray-600">Cash, UPI, cards - pay however you prefer</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="text-purple-600 text-xl">⏰</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2">Extended Hours</h3>
+                        <p class="text-gray-600">Open 7 days a week from 6 AM to 10 PM</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="text-orange-600 text-xl">🎯</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2">Quality Guarantee</h3>
+                        <p class="text-gray-600">100% satisfaction guaranteed or money back</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+                    <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="text-red-600 text-xl">🏷️</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2">Weekly Offers</h3>
+                        <p class="text-gray-600">Special discounts and combo deals every week</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+                    <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="text-teal-600 text-xl">👥</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2">Personal Service</h3>
+                        <p class="text-gray-600">Friendly staff who know you by name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="py-16 bg-gradient-to-r from-orange-400 to-red-500 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">🎉 This Week's Special Offers</h2>
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-2">Buy 2 Get 1 Free</h3>
+                    <p class="mb-4">On all cleaning products</p>
+                    <span class="bg-white text-orange-500 px-4 py-2 rounded-full font-semibold">Valid till Sunday</span>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-2">20% Off</h3>
+                    <p class="mb-4">On fresh fruits & vegetables</p>
+                    <span class="bg-white text-orange-500 px-4 py-2 rounded-full font-semibold">Daily 6-9 AM</span>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-2">Free Delivery</h3>
+                    <p class="mb-4">On orders above ₹300</p>
+                    <span class="bg-white text-orange-500 px-4 py-2 rounded-full font-semibold pulse-animation">Limited Time</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Visit Us Today</h2>
+                <p class="text-gray-600">We're here to serve you with a smile</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6">Store Information</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <span class="text-blue-600">📍</span>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Address</p>
+                                    <p class="text-gray-600">Main Market Street, Near Bus Stand<br>Your City - 123456</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                                    <span class="text-green-600">📞</span>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Phone</p>
+                                    <p class="text-gray-600">+91 98765 43210</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                                    <span class="text-purple-600">⏰</span>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Store Hours</p>
+                                    <p class="text-gray-600">Mon-Sun: 6:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+                                    <span class="text-orange-600">✉️</span>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Email</p>
+                                    <p class="text-gray-600">info@maannapoorna.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6">Quick Order Form</h3>
+                        <p class="text-sm text-gray-600 mb-4">📝 Demo Form - For actual orders, please call or visit our store</p>
+                        
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your name">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your phone">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Items Needed</label>
+                                <textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" rows="3" placeholder="List the items you need..."></textarea>
+                            </div>
+                            
+                            <button type="button" onclick="showOrderConfirmation()" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                                📞 Request Callback
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">🏪</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Maa Annapoorna</h3>
+                            <p class="text-sm text-gray-400">General Stores</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">Your trusted neighborhood store for all daily needs. Quality products, affordable prices, and friendly service.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#products" class="hover:text-white transition-colors">Products</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Categories</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Fresh Groceries</li>
+                        <li>Household Items</li>
+                        <li>Personal Care</li>
+                        <li>Electronics</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <button class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                            <span class="text-white">📘</span>
+                        </button>
+                        <button class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors">
+                            <span class="text-white">📱</span>
+                        </button>
+                        <button class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors">
+                            <span class="text-white">📧</span>
+                        </button>
+                    </div>
+                    <p class="text-gray-400 text-sm">Follow us for daily offers and updates!</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Maa Annapoorna General Stores. All rights reserved. | Serving the community with love and care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function showOrderConfirmation() {
+            alert('Thank you for your interest! This is a demo form. Please call us at +91 98765 43210 or visit our store to place your order. We\'ll be happy to help you!');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96e832e8f4153cb8',t:'MTc1NTA4Nzk2NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
